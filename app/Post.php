@@ -9,7 +9,8 @@ class Post extends Model
     //
 
     protected $fillable = [
-
+        // 'id',
+        // 'user_id',
     	'category_id',
     	'photo_id',
     	'title',
@@ -41,7 +42,7 @@ class Post extends Model
     public function comments(){
 
 
-        return $this->hasMany('App\Post');
+        return $this->hasMany('App\Comment');
 
     }
 
