@@ -7,7 +7,7 @@
 
 
 @section('content')
-
+	@include('includes.tinyeditor')
 
 	<h1>Edit Posts</h1>
 
