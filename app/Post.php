@@ -2,15 +2,17 @@
 
 namespace App;
 
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
     //
+    use Sluggable;
+    //use SluggableScopeHelpers;
 
     protected $fillable = [
-        // 'id',
-        // 'user_id',
+    
     	'category_id',
     	'photo_id',
     	'title',
@@ -18,6 +20,16 @@ class Post extends Model
 
     ];
 
+
+    public function sluggable() {
+        return [
+            'slug' => [
+                'source'         => 'title',
+                'separator'      => '-',
+                'includeTrashed' => true,
+            ]
+        ];
+    }
 
 
     public function user(){
@@ -47,4 +59,9 @@ class Post extends Model
     }
 
 
+    public function photoPlaceholder(){
+
+        return 'http://placehold.it/700x200';
+
+    }
 }
