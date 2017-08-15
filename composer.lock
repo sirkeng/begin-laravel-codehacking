@@ -2497,7 +2497,7 @@
             ],
             "authors": [
                 {
-                    "name": "Pádraic Brady",
+                    "name": "Padraic Brady",
                     "email": "padraic.brady@gmail.com",
                     "homepage": "http://blog.astrumfutura.com"
                 },
@@ -2579,6 +2579,18 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
+<<<<<<< HEAD
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "reference": "46f7e8bb075036c92695b15a1ddb6971c751e585"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/46f7e8bb075036c92695b15a1ddb6971c751e585",
+                "reference": "46f7e8bb075036c92695b15a1ddb6971c751e585",
+=======
             "version": "3.2.2",
             "source": {
                 "type": "git",
@@ -2589,12 +2601,17 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/4aada1f93c72c35e22fb1383b47fee43b8f1d157",
                 "reference": "4aada1f93c72c35e22fb1383b47fee43b8f1d157",
+>>>>>>> 63558276269504a658fa4a2bd1df31886cfddf90
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5",
                 "phpdocumentor/reflection-common": "^1.0@dev",
+<<<<<<< HEAD
+                "phpdocumentor/type-resolver": "^0.4.0",
+=======
                 "phpdocumentor/type-resolver": "^0.3.0",
+>>>>>>> 63558276269504a658fa4a2bd1df31886cfddf90
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
@@ -2620,6 +2637,22 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
+<<<<<<< HEAD
+            "time": "2017-07-15T11:38:20+00:00"
+        },
+        {
+            "name": "phpdocumentor/type-resolver",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/TypeResolver.git",
+                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
+                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
+=======
             "time": "2017-08-08T06:39:58+00:00"
         },
         {
@@ -2634,6 +2667,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/fb3933512008d8162b3cdf9e18dba9309b7c3773",
                 "reference": "fb3933512008d8162b3cdf9e18dba9309b7c3773",
+>>>>>>> 63558276269504a658fa4a2bd1df31886cfddf90
                 "shasum": ""
             },
             "require": {
@@ -2667,7 +2701,11 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
+<<<<<<< HEAD
+            "time": "2017-07-14T14:27:02+00:00"
+=======
             "time": "2017-06-03T08:32:36+00:00"
+>>>>>>> 63558276269504a658fa4a2bd1df31886cfddf90
         },
         {
             "name": "phpspec/prophecy",
