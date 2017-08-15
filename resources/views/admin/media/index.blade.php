@@ -20,7 +20,7 @@
 
 		<div class="form-group">
 			<select name="checkBoxArray" id=""  class="form-control">
-				<option value="delete">Delete</option>
+				<option value="">Delete</option>
 			</select>
 		</div>
 		<div class="form-group">
@@ -48,11 +48,12 @@
 		        <td>{{$photo->created_at ? $photo->created_at : 'no date'}}</td>
 		        <td>
 		        	
-		        	<input type="text" name="photo" value="{{$photo->id}}">
+		        	{{-- <input type="text" name="photo" value="{{$photo->id}}"> --}}
 
 						
 					<div class="form-group">
-						<input type="submit" name="delete_single" value="Delete" class="btn btn-danger">
+					{{-- 	<input type="submit" name="delete_single" value="{{$photo->id}}" class="btn btn-danger"> --}}
+						<button type="submit" name="delete_single" value="{{$photo->id}}" class="btn btn-danger">Submit</button>
 					</div>
 
 
