@@ -10,7 +10,7 @@
                 <!-- Blog Post -->
 
                 <!-- Title -->
-                <h1>Blog Post Title</h1>
+                {{-- <h1>Blog Post Title</h1> --}}
 
                 <!-- Author -->
                 <p class="lead">
