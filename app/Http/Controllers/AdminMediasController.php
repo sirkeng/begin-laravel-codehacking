@@ -44,7 +44,7 @@ class AdminMediasController extends Controller
     }
 
     public function destroy($id){
-        return $id.'sss';
+        //return $id.'sss555';
     	$photo = Photo::findOrFail($id);
 
     	if(isset($photo->file)){
@@ -54,17 +54,18 @@ class AdminMediasController extends Controller
 
     	$photo->delete();
 
-        // return redirect()->back();
+        return redirect()->back();
     }
 
 
     public function deleteMedia(Request $request){
        // return dd($request);
         if(isset($request->delete_single)){
-           return $request->delete_single;
-            $this->destroy($request->photo);
-
-             return redirect()->back();
+           //return 'Delete sigle'.$request->delete_single;
+            //return $this->destroy($request->photo);
+            return $this->destroy($request->delete_single);
+            //return 'sss';
+             //return redirect()->back();
 
         }
 
